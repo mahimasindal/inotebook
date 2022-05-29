@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+/* * {
+    background-color: #f1e1f3;
+    color: #4d306b;
+} */
+
+* {
+    font-family: 'Balsamiq Sans', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+.mostOuterContainer {
+    background-color: #f1e1f3;
+    min-height: 100vh;
+    padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/*Navbar*/
+
+.vertical-align {
+    line-height: 2.3;
+    padding-right: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-customclass {
+    background-color: #957dad;
+    color: white;
+    /* border: 2px black solid; */
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-collapse {
+    margin-left: 25px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand img {
+    height: 3em;
+}
+
+.arrow {
+    color: rgba(255, 255, 255, .55);
+    font-size: 1.5em;
+}
+
+.arrow:hover {
+    color: white;
+}
+
+
+/*Add Notes*/
+
+.addNoteCard {
+    /*also used for login signup*/
+    /* border: 2px black solid;*/
+    border-radius: 15px;
+    background-color: #a493b6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    margin-top: 25px;
+}
+
+.plus-float {
+    position: fixed;
+    font-size: 4em;
+    bottom: 40px;
+    right: 40px;
+    color: #957dad;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    margin-top: 22px;
+}
+
+.plus-float:hover {
+    transition-delay: 100ms;
+    color: #875bb3;
+    box-shadow: 3px 3px 4px rgb(119, 119, 119);
+}
+
+
+/*Buttons*/
+
+.btn1 {
+    background-color: #957dad;
+    border-color: #f1e1f3;
+    color: #f1e1f3;
+}
+
+.btn1:hover {
+    background-color: #f1e1f3;
+    color: #957dad;
+}
+
+.btn2 {
+    color: #f1e1f3;
+}
+
+.btn2:hover {
+    background-color: #957dad;
+    border-color: #f1e1f3;
+    color: #f1e1f3;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* pastel yellow-#FDFD96; 
+lavendar rgb(151, 151, 165)
+lightish blue-#DCFFFB
+pastel- pink*/
+
+
+/*Notes Layout*/
+
+.notes-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    /* row-gap column gap */
+}
+
+.note-item {
+    position: relative;
+    /*height: 20vh;*/
+    flex-grow: 1;
+    border: 2px #a493b6 solid;
+    border-radius: 15px;
+    background-color: #f1e1f3;
+    overflow: hidden;
+}
+
+.note-item:hover {
+    border: 2px #a493b6 solid;
+    background-color: #e5d3e7;
+}
+
+.note-item-inner {
+    max-height: 20vh;
+    color: black;
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.card-text {
+    overflow: hidden;
+    white-space: nowrap;
+    /* Don't forget this one */
+    text-overflow: ellipsis;
+}
+
+.little-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #957dad;
+    font-size: 1em;
+    margin-right: 4px;
+}
+
+.little-icons:hover {
+    color: #8b69ad;
+    font-size: 1.1em;
+    cursor: grab;
 }
