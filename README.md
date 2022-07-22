@@ -1,5 +1,6 @@
 # INOTEBOOK APPLICATION
 It is an app build with REACT JS, NODE JS, EXPRESS JS AND MONGO DB
+[Checkout the app](https://inotebook-your-notes.netlify.app/)
 
 LOGIN 
 ![image_6487327 (5)](https://user-images.githubusercontent.com/52040912/180432318-2058b588-5df5-4207-9fd3-0a5e20f4413e.JPG)
