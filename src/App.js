@@ -13,6 +13,8 @@ import PrivateRoute from './components/PrivateRoute';
 import UserState from './context/user/UserState';
 //import noteContext from "./context/notes/noteContext"
 
+//ye mahi ka style hai
+
 function App() {
 
     const [alert, setAlert] = useState(null)
